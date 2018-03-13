@@ -7,3 +7,12 @@ let res2 = vals.shift();
 console.log(vals);
 vals.splice(0,3, 3, 33, 44, 55);
 console.log(vals);
+
+var foo = "out";
+
+function func() {
+  var foo = "in";
+}
+
+func();
+console.log(foo);
