@@ -16,3 +16,11 @@ function func() {
 
 func();
 console.log(foo);
+
+var test = "outside";
+function myFunc() {
+  console.log(test);
+  var test = "inside";
+}
+
+myFunc();
